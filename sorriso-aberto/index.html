@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tatiana Bresser — Dentista e Consultório Odontológico</title>
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Uma clínica de bairro para quem tem medo de dentista. Atendimento humanizado para famílias, sem julgamento, sem pressa."
+    />
+    <meta property="og:title" content="Sorriso Aberto — Clínica Odontológica" />
+    <meta
+      property="og:description"
+      content="Atendimento humanizado para famílias e pacientes ansiosos. Consulta com hora marcada, sem pressa."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ["Fraunces", "Lora", "Georgia", "serif"],
+              sans: ['"Work Sans"', "system-ui", "sans-serif"],
+            },
+            colors: {
+              paper: "oklch(0.965 0.012 85)",
+              bone: "oklch(0.945 0.02 82)",
+              sage: "oklch(0.82 0.04 145)",
+              "sage-deep": "oklch(0.5 0.05 150)",
+              terracotta: "oklch(0.62 0.13 40)",
+              "terracotta-soft": "oklch(0.78 0.08 45)",
+              ink: "oklch(0.28 0.02 60)",
+              "ink-soft": "oklch(0.42 0.02 60)",
+              border: "oklch(0.88 0.015 82)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="min-h-screen bg-paper text-ink font-sans">
+    <!-- ========== HEADER ========== -->
+    <header
+      class="sticky top-0 z-40 border-b border-border/60 bg-paper/80 backdrop-blur-sm"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8"
+      >
+        <a href="#inicio" class="flex items-baseline gap-2">
+          <span
+            class="font-serif text-2xl leading-none text-ink md:text-[26px]"
+          >
+            Tatiana <em class="not-italic text-terracotta">Bresser</em>
+          </span>
+          <span
+            class="hidden text-[11px] uppercase tracking-[0.22em] text-ink-soft sm:inline"
+            >odontologia</span
+          >
+        </a>
+
+        <nav class="hidden items-center gap-7 md:flex">
+          <a href="#inicio" class="text-[14px] text-ink-soft hover:text-ink"
+            >Início</a
+          >
+          <a
+            href="#tratamentos"
+            class="text-[14px] text-ink-soft hover:text-ink"
+            >Tratamentos</a
+          >
+          <a href="#sobre" class="text-[14px] text-ink-soft hover:text-ink"
+            >Sobre</a
+          >
+          <a
+            href="#depoimentos"
+            class="text-[14px] text-ink-soft hover:text-ink"
+            >Depoimentos</a
+          >
+          <a href="#contato" class="text-[14px] text-ink-soft hover:text-ink"
+            >Contato</a
+          >
+          <a
+            href="#contato"
+            class="rounded-full border border-ink px-4 py-2 text-[13px] text-ink hover:bg-ink hover:text-paper transition-colors"
+            >Agendar</a
+          >
+        </nav>
+
+        <button id="menuBtn" class="md:hidden" aria-label="Abrir menu">
+          <svg
+            id="menuIconOpen"
+            viewBox="0 0 24 24"
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <path d="M4 8 H20" stroke-linecap="round" />
+            <path d="M4 16 H20" stroke-linecap="round" />
+          </svg>
+          <svg
+            id="menuIconClose"
+            viewBox="0 0 24 24"
+            class="hidden h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <path d="M5 5 L19 19 M19 5 L5 19" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden border-t border-border/60 bg-paper md:hidden"
+      >
+        <div class="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4">
+          <a
+            href="#inicio"
+            class="rounded-md px-2 py-2 text-ink-soft hover:bg-bone hover:text-ink mobile-link"
+            >Início</a
+          >
+          <a
+            href="#tratamentos"
+            class="rounded-md px-2 py-2 text-ink-soft hover:bg-bone hover:text-ink mobile-link"
+            >Tratamentos</a
+          >
+          <a
+            href="#sobre"
+            class="rounded-md px-2 py-2 text-ink-soft hover:bg-bone hover:text-ink mobile-link"
+            >Sobre</a
+          >
+          <a
+            href="#depoimentos"
+            class="rounded-md px-2 py-2 text-ink-soft hover:bg-bone hover:text-ink mobile-link"
+            >Depoimentos</a
+          >
+          <a
+            href="#contato"
+            class="rounded-md px-2 py-2 text-ink-soft hover:bg-bone hover:text-ink mobile-link"
+            >Contato</a
+          >
+          <a
+            href="#contato"
+            class="mt-2 rounded-full border border-ink px-4 py-2 text-center text-ink mobile-link"
+            >Agendar consulta</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section id="inicio" class="relative overflow-hidden">
+        <div
+          class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 pt-14 pb-20 md:grid-cols-12 md:gap-14 md:px-8 md:pt-24 md:pb-28"
+        >
+          <div class="reveal md:col-span-6 md:pt-10">
+            <p
+              class="mb-6 flex items-center gap-3 text-[12px] uppercase tracking-[0.28em] text-terracotta"
+            >
+              <span class="inline-block h-px w-8 bg-terracotta"></span>
+              desde 2011, no bairro
+            </p>
+            <h1
+              class="font-serif text-[38px] leading-[1.05] text-ink sm:text-[52px] md:text-[62px]"
+            >
+              Um dentista <br />
+              <span class="italic text-sage-deep">sem pressa</span>,
+              <br class="hidden sm:block" />
+              <span class="hand-underline">do jeitinho do bairro.</span>
+            </h1>
+            <p class="mt-7 max-w-md text-[17px] leading-relaxed text-ink-soft">
+              Sei que ir ao dentista não é a parte favorita do seu dia. A gente
+              tenta mudar isso — com café na sala de espera, música baixa e
+              explicando cada passo antes de fazer.
+            </p>
+            <div class="mt-9 flex flex-wrap items-center gap-4">
+              <a
+                href="#contato"
+                class="rounded-full bg-ink px-6 py-3 text-[14px] text-paper hover:-translate-y-0.5 transition-transform"
+                >Agende sua consulta</a
+              >
+              <a
+                href="#tratamentos"
+                class="text-[14px] text-ink underline decoration-terracotta decoration-2 underline-offset-4 hover:text-terracotta"
+                >Ver tratamentos</a
+              >
+            </div>
+          </div>
+
+          <div class="reveal relative md:col-span-6">
+            <div
+              class="absolute -left-3 top-6 z-10 -rotate-3 rounded-md bg-bone px-3 py-1.5 text-[12px] text-ink shadow-sm md:-left-8"
+            >
+              atendemos crianças ✿
+            </div>
+            <div
+              class="ml-auto w-[95%] overflow-hidden rounded-[4px] md:w-[92%] md:translate-y-6"
+              style="box-shadow: 0 20px 60px -30px rgba(80, 60, 40, 0.35)"
+            >
+              <img
+                src="images/tatiana-bresser-dentista.png"
+                alt="Interior do consultório da Sorriso Aberto, com cadeira odontológica e planta na janela"
+                width="1600"
+                height="1104"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 left-4 -rotate-2 rounded-sm bg-paper px-4 py-2 text-[12px] text-ink-soft shadow-sm md:left-2"
+            >
+              Vila Maria, São Paulo
+            </div>
+          </div>
+        </div>
+
+        <svg
+          class="mx-auto -mt-4 h-3 w-[75%] max-w-[520px] text-terracotta/60"
+          viewBox="0 0 400 20"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+      </section>
+
+      <!-- ========== SOBRE ========== -->
+      <section id="sobre" class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-12">
+          <div class="reveal md:col-span-4 md:pt-2">
+            <p class="text-[12px] uppercase tracking-[0.28em] text-terracotta">
+              sobre a clínica
+            </p>
+            <h2
+              class="mt-4 font-serif text-[34px] leading-[1.1] md:text-[42px]"
+            >
+              Uma sala, três cadeiras, muita paciência.
+            </h2>
+          </div>
+          <div
+            class="reveal space-y-5 text-[17px] leading-relaxed text-ink-soft md:col-span-7 md:col-start-6 md:pt-4"
+          >
+            <p>
+              A Sorriso Aberto abriu em 2011 num sobrado da rua das Acácias.
+              Começou pequena — só a Dra. Helena e uma secretária — e assim
+              continua pequena, de propósito. A gente conhece os pacientes pelo
+              nome, sabe quem tem medo de agulha e quem gosta de conversar sobre
+              futebol enquanto espera o anestésico fazer efeito.
+            </p>
+            <p>
+              Não fazemos venda de tratamento, não pressionamos. Se você não
+              precisa clarear, a gente diz. Se dá pra esperar mais seis meses
+              pra trocar a restauração, a gente também diz. É clínica de bairro,
+              e a gente pretende continuar aqui por muitos anos.
+            </p>
+            <p class="font-serif text-[20px] italic text-ink">
+              — Dra. Helena Ribeiro, responsável técnica
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TRATAMENTOS ========== -->
+      <section id="tratamentos" class="bg-bone/60">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <div
+            class="reveal mb-14 grid grid-cols-1 items-end gap-6 md:grid-cols-12"
+          >
+            <div class="md:col-span-7">
+              <p
+                class="text-[12px] uppercase tracking-[0.28em] text-terracotta"
+              >
+                o que fazemos
+              </p>
+              <h2
+                class="mt-4 font-serif text-[34px] leading-[1.1] md:text-[44px]"
+              >
+                Tratamentos que a gente
+                <em class="text-sage-deep">realmente</em> oferece.
+              </h2>
+            </div>
+            <p class="text-[15px] text-ink-soft md:col-span-4 md:col-start-9">
+              Nada de lista infinita. Só o que fazemos aqui dentro, com nossa
+              equipe. Se precisar de algo fora disso, indicamos alguém de
+              confiança.
+            </p>
+          </div>
+
+          <ul
+            class="grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14 10 C 10 10, 8 14, 9 20 C 10 26, 12 30, 14 38 C 15 42, 18 42, 19 38 L 21 30 C 22 27, 26 27, 27 30 L 29 38 C 30 42, 33 42, 34 38 C 36 30, 38 26, 39 20 C 40 14, 38 10, 34 10 C 30 10, 28 12, 24 12 C 20 12, 18 10, 14 10 Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Limpeza & prevenção</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Consulta de rotina, com aquele raspador que assusta menos do que
+                parece. Ida a cada seis meses, no seu tempo.
+              </p>
+            </li>
+
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 8 L 26 20 L 38 22 L 26 24 L 24 36 L 22 24 L 10 22 L 22 20 Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M36 10 L 37 14 L 41 15 L 37 16 L 36 20 L 35 16 L 31 15 L 35 14 Z"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Clareamento</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Feito em consultório e caseiro. Explicamos o que dá resultado
+                real e o que é promessa de internet.
+              </p>
+            </li>
+
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 24 C 14 20, 34 20, 42 24"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 30 C 14 34, 34 34, 42 30"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="11"
+                    y="21"
+                    width="4"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                  />
+                  <rect
+                    x="22"
+                    y="21"
+                    width="4"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                  />
+                  <rect
+                    x="33"
+                    y="21"
+                    width="4"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Ortodontia</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Aparelho fixo e alinhadores transparentes. Plano de tratamento
+                honesto, sem prazo inflado.
+              </p>
+            </li>
+
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 8 C 16 8, 15 10, 15 12 L 15 20 C 15 22, 17 24, 18 24 L 30 24 C 31 24, 33 22, 33 20 L 33 12 C 33 10, 32 8, 30 8 Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M22 24 L 22 30 M 26 24 L 26 30"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M19 32 L 29 32 M 20 36 L 28 36 M 21 40 L 27 40"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Implantes</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Do planejamento à coroa. Fazemos com calma, em etapas bem
+                explicadas — sem susto na hora do orçamento.
+              </p>
+            </li>
+
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="24"
+                    cy="16"
+                    r="6"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M12 40 C 12 30, 36 30, 36 40"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 15 Q 21 17, 22 15 M 26 15 Q 27 17, 28 15"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M21 19 Q 24 22, 27 19"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Odontopediatria</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Primeira consulta a partir de 1 ano. A Dra. Camila entende de
+                birra, e a cadeira tem adesivo de dinossauro.
+              </p>
+            </li>
+
+            <li class="reveal group">
+              <div
+                class="text-sage-deep transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  class="h-12 w-12"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 6 L 28 20 L 42 20 L 30 28 L 34 42 L 24 34 L 14 42 L 18 28 L 6 20 L 20 20 Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Urgências</h3>
+              <svg
+                class="mt-3 h-2 w-24 text-terracotta/70"
+                viewBox="0 0 400 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="mt-3 max-w-xs text-[15px] leading-relaxed text-ink-soft"
+              >
+                Dor de dente não escolhe hora. Ligue no WhatsApp — a gente
+                encaixa no mesmo dia sempre que dá.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== DEPOIMENTOS ========== -->
+      <section
+        id="depoimentos"
+        class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28"
+      >
+        <div class="reveal mb-14 max-w-xl">
+          <p class="text-[12px] uppercase tracking-[0.28em] text-terracotta">
+            quem já sentou na cadeira
+          </p>
+          <h2 class="mt-4 font-serif text-[34px] leading-[1.1] md:text-[42px]">
+            Histórias, não avaliações de cinco estrelas.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+          <figure class="reveal relative">
+            <svg
+              viewBox="0 0 40 40"
+              class="mb-4 h-7 w-7 text-terracotta"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            >
+              <path
+                d="M8 22 C 8 14, 14 10, 18 10 M 22 22 C 22 14, 28 10, 32 10"
+              />
+              <path
+                d="M8 22 L 8 30 L 16 30 L 16 22 Z M 22 22 L 22 30 L 30 30 L 30 22 Z"
+              />
+            </svg>
+            <blockquote class="font-serif text-[19px] leading-[1.55] text-ink">
+              Fugi de dentista por doze anos. Marquei aqui porque uma vizinha
+              insistiu. Chorei na primeira consulta e ninguém achou estranho — a
+              Dra. Helena só disse pra respirar fundo e voltar semana que vem.
+              Voltei. Já são três anos.
+            </blockquote>
+            <figcaption class="mt-5 text-[13px] text-ink-soft">
+              <span class="text-ink">Marta S.</span> · paciente desde 2022
+            </figcaption>
+          </figure>
+
+          <figure class="reveal relative md:translate-y-8">
+            <svg
+              viewBox="0 0 40 40"
+              class="mb-4 h-7 w-7 text-terracotta"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            >
+              <path
+                d="M8 22 C 8 14, 14 10, 18 10 M 22 22 C 22 14, 28 10, 32 10"
+              />
+              <path
+                d="M8 22 L 8 30 L 16 30 L 16 22 Z M 22 22 L 22 30 L 30 30 L 30 22 Z"
+              />
+            </svg>
+            <blockquote class="font-serif text-[19px] leading-[1.55] text-ink">
+              Levei meu filho de 4 anos achando que ia ser um desastre. A Dra.
+              Camila deixou ele mexer no espelhinho, contar os dentes dela
+              primeiro. Saiu de lá pedindo pra voltar. Ainda não acredito.
+            </blockquote>
+            <figcaption class="mt-5 text-[13px] text-ink-soft">
+              <span class="text-ink">Rafael M.</span> · pai do Bento
+            </figcaption>
+          </figure>
+
+          <figure class="reveal relative md:translate-y-3">
+            <svg
+              viewBox="0 0 40 40"
+              class="mb-4 h-7 w-7 text-terracotta"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            >
+              <path
+                d="M8 22 C 8 14, 14 10, 18 10 M 22 22 C 22 14, 28 10, 32 10"
+              />
+              <path
+                d="M8 22 L 8 30 L 16 30 L 16 22 Z M 22 22 L 22 30 L 30 30 L 30 22 Z"
+              />
+            </svg>
+            <blockquote class="font-serif text-[19px] leading-[1.55] text-ink">
+              Fiz dois implantes ano passado. O que me marcou foi o Dr. Marcos
+              ter ligado no domingo pra perguntar se eu estava bem. Não foi
+              mensagem automática, foi ele mesmo. Isso não se aprende em
+              faculdade.
+            </blockquote>
+            <figcaption class="mt-5 text-[13px] text-ink-soft">
+              <span class="text-ink">Luiza C.</span> · paciente desde 2019
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== EQUIPE ========== -->
+      <section class="bg-sage/25">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <div
+            class="reveal mb-14 grid grid-cols-1 gap-6 md:grid-cols-12 md:items-end"
+          >
+            <div class="md:col-span-7">
+              <p
+                class="text-[12px] uppercase tracking-[0.28em] text-terracotta"
+              >
+                a equipe
+              </p>
+              <h2
+                class="mt-4 font-serif text-[34px] leading-[1.1] md:text-[42px]"
+              >
+                Três pessoas que atendem <br class="hidden md:block" />
+                você <em class="italic text-sage-deep">pelo nome</em>.
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10">
+            <article class="reveal">
+              <div class="overflow-hidden rounded-[3px] bg-bone">
+                <img
+                  src="images/dentista1.jpg"
+                  alt="Retrato de Dra. Helena Ribeiro"
+                  loading="lazy"
+                  width="800"
+                  height="1000"
+                  class="h-[380px] w-full object-cover team-photo"
+                />
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Dra. Helena Ribeiro</h3>
+              <p
+                class="mt-1 text-[13px] uppercase tracking-[0.14em] text-ink-soft"
+              >
+                Clínica geral · CRO/SP 43.211
+              </p>
+              <p
+                class="mt-4 font-serif text-[17px] italic leading-relaxed text-ink"
+              >
+                "Comecei essa clínica querendo ter tempo pra cada pessoa. Ainda
+                tenho, e é o que mais me importa."
+              </p>
+            </article>
+
+            <article class="reveal md:translate-y-10">
+              <div class="overflow-hidden rounded-[3px] bg-bone">
+                <img
+                  src="images/dentista2.jpg"
+                  alt="Retrato de Dr. Marcos Andrei"
+                  loading="lazy"
+                  width="800"
+                  height="1000"
+                  class="h-[380px] w-full object-cover team-photo"
+                />
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Dr. Marcos Andrei</h3>
+              <p
+                class="mt-1 text-[13px] uppercase tracking-[0.14em] text-ink-soft"
+              >
+                Implantodontia · CRO/SP 58.902
+              </p>
+              <p
+                class="mt-4 font-serif text-[17px] italic leading-relaxed text-ink"
+              >
+                "Explicar antes de fazer. Perguntar duas vezes se está
+                confortável. Isso pra mim é técnica também."
+              </p>
+            </article>
+
+            <article class="reveal">
+              <div class="overflow-hidden rounded-[3px] bg-bone">
+                <img
+                  src="images/dentista3.jpg"
+                  alt="Retrato de Dra. Camila Prado"
+                  loading="lazy"
+                  width="800"
+                  height="1000"
+                  class="h-[380px] w-full object-cover team-photo"
+                />
+              </div>
+              <h3 class="mt-5 font-serif text-[22px]">Dra. Camila Prado</h3>
+              <p
+                class="mt-1 text-[13px] uppercase tracking-[0.14em] text-ink-soft"
+              >
+                Odontopediatria · CRO/SP 62.410
+              </p>
+              <p
+                class="mt-4 font-serif text-[17px] italic leading-relaxed text-ink"
+              >
+                "Criança não é adulto pequeno. Meu trabalho é fazer da consulta
+                uma memória boa, não uma que ela vá querer esquecer."
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FAQ ========== -->
+      <section class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-12">
+          <div class="reveal md:col-span-4">
+            <p class="text-[12px] uppercase tracking-[0.28em] text-terracotta">
+              perguntas honestas
+            </p>
+            <h2
+              class="mt-4 font-serif text-[34px] leading-[1.1] md:text-[40px]"
+            >
+              O que a gente mais escuta no telefone.
+            </h2>
+            <p class="mt-5 max-w-xs text-[15px] text-ink-soft">
+              Se sua pergunta não estiver aqui, manda no WhatsApp. Respondemos a
+              gente mesmo — não é chatbot.
+            </p>
+          </div>
+
+          <ul
+            id="faqList"
+            class="reveal divide-y divide-border md:col-span-7 md:col-start-6"
+          >
+            <li class="faq-item" data-open="true">
+              <button
+                class="faq-btn flex w-full items-center justify-between gap-6 py-5 text-left"
+              >
+                <span class="font-serif text-[20px] text-ink">Dói?</span>
+                <span
+                  class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/40 text-ink transition-transform"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    class="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <path d="M10 4 V16 M 4 10 H16" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-panel">
+                <p class="pb-6 pr-10 text-[16px] leading-relaxed text-ink-soft">
+                  Quase nunca. E quando dói, a gente avisa antes — não gosta de
+                  surpresa desse tipo mais do que você. Usamos anestesia tópica
+                  antes da agulha, e você pode pedir pausa a qualquer momento.
+                </p>
+              </div>
+            </li>
+            <li class="faq-item" data-open="false">
+              <button
+                class="faq-btn flex w-full items-center justify-between gap-6 py-5 text-left"
+              >
+                <span class="font-serif text-[20px] text-ink"
+                  >Vocês atendem convênio?</span
+                >
+                <span
+                  class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/40 text-ink transition-transform"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    class="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <path d="M10 4 V16 M 4 10 H16" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-panel">
+                <p class="pb-6 pr-10 text-[16px] leading-relaxed text-ink-soft">
+                  Trabalhamos com Amil Dental, Odontoprev e SulAmérica. Também
+                  atendemos particular e temos plano próprio de pagamento
+                  parcelado, sem juros de cartão embutidos.
+                </p>
+              </div>
+            </li>
+            <li class="faq-item" data-open="false">
+              <button
+                class="faq-btn flex w-full items-center justify-between gap-6 py-5 text-left"
+              >
+                <span class="font-serif text-[20px] text-ink"
+                  >Posso levar meu filho?</span
+                >
+                <span
+                  class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/40 text-ink transition-transform"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    class="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <path d="M10 4 V16 M 4 10 H16" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-panel">
+                <p class="pb-6 pr-10 text-[16px] leading-relaxed text-ink-soft">
+                  Pode e adoramos. A Dra. Camila é odontopediatra e a sala de
+                  espera tem uma cesta de livros. Atendemos a partir do primeiro
+                  dente — geralmente por volta de 1 ano de idade.
+                </p>
+              </div>
+            </li>
+            <li class="faq-item" data-open="false">
+              <button
+                class="faq-btn flex w-full items-center justify-between gap-6 py-5 text-left"
+              >
+                <span class="font-serif text-[20px] text-ink"
+                  >Faz quanto tempo que estão no bairro?</span
+                >
+                <span
+                  class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/40 text-ink transition-transform"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    class="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <path d="M10 4 V16 M 4 10 H16" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-panel">
+                <p class="pb-6 pr-10 text-[16px] leading-relaxed text-ink-soft">
+                  Desde novembro de 2011. Já atendemos uma geração inteira —
+                  várias das nossas primeiras crianças pacientes hoje trazem
+                  seus próprios filhos.
+                </p>
+              </div>
+            </li>
+            <li class="faq-item" data-open="false">
+              <button
+                class="faq-btn flex w-full items-center justify-between gap-6 py-5 text-left"
+              >
+                <span class="font-serif text-[20px] text-ink"
+                  >Como funciona a primeira consulta?</span
+                >
+                <span
+                  class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border border-ink/40 text-ink transition-transform"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    class="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <path d="M10 4 V16 M 4 10 H16" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-panel">
+                <p class="pb-6 pr-10 text-[16px] leading-relaxed text-ink-soft">
+                  É uma conversa. A gente pergunta o histórico, examina, mostra
+                  o que viu e explica as opções. Você sai com um orçamento por
+                  escrito e leva pra pensar em casa. Sem pressão nenhuma.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== CONTATO ========== -->
+      <section id="contato" class="bg-ink text-paper">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
+            <div class="reveal md:col-span-5">
+              <p
+                class="text-[12px] uppercase tracking-[0.28em] text-terracotta-soft"
+              >
+                agendar
+              </p>
+              <h2
+                class="mt-4 font-serif text-[36px] leading-[1.05] text-paper md:text-[48px]"
+              >
+                A gente <em class="italic text-sage">te espera</em> com café
+                pronto.
+              </h2>
+
+              <dl class="mt-10 space-y-6 text-[15px]">
+                <div>
+                  <dt
+                    class="text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                  >
+                    Endereço
+                  </dt>
+                  <dd class="mt-1 text-paper">
+                    Alameda Subtenente Francisco Hierro, 204, Sala 3 - Vila
+                    Maria, São Paulo SP, 02187-040, Brasil
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                  >
+                    WhatsApp
+                  </dt>
+                  <dd class="mt-1">
+                    <a
+                      href="https://wa.me/5511974043073"
+                      class="text-paper underline decoration-terracotta-soft decoration-2 underline-offset-4"
+                      >(11) 97404-3073</a
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                  >
+                    Horário
+                  </dt>
+                  <dd class="mt-1 text-paper">
+                    segunda a sexta · 9h30 às 19h00<br />sábado · Fechado
+                  </dd>
+                </div>
+              </dl>
+
+              <div
+                class="mt-10 overflow-hidden rounded-[3px] border border-paper/15"
+              >
+                <iframe
+                  title="Mapa da clínica"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-46.568840146064765%2C-23.517379495330175%2C-46.5649026632309%2C-23.513173816089278&amp;layer=mapnik"
+                  class="h-56 w-full"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="reveal md:col-span-6 md:col-start-7">
+              <form id="contatoForm" class="space-y-6">
+                <div>
+                  <label
+                    for="nome"
+                    class="mb-2 block text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                    >Como podemos te chamar?</label
+                  >
+                  <input
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    class="w-full border-b border-paper/25 bg-transparent py-2 text-[15px] text-paper outline-none placeholder:text-paper/40 focus:border-terracotta-soft"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="tel"
+                    class="mb-2 block text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                    >Telefone com WhatsApp</label
+                  >
+                  <input
+                    id="tel"
+                    name="tel"
+                    placeholder="(11) 90000-0000"
+                    class="w-full border-b border-paper/25 bg-transparent py-2 text-[15px] text-paper outline-none placeholder:text-paper/40 focus:border-terracotta-soft"
+                  />
+                </div>
+                <div>
+                  <span
+                    class="mb-2 block text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                    >Melhor horário pra ligarmos</span
+                  >
+                  <div class="flex flex-wrap gap-2">
+                    <label
+                      class="cursor-pointer rounded-full border border-paper/30 px-4 py-2 text-[13px] text-paper/90 has-[:checked]:border-terracotta-soft has-[:checked]:bg-terracotta-soft has-[:checked]:text-ink transition-colors"
+                      ><input
+                        type="radio"
+                        name="horario"
+                        value="Manhã"
+                        class="sr-only"
+                      />Manhã</label
+                    >
+                    <label
+                      class="cursor-pointer rounded-full border border-paper/30 px-4 py-2 text-[13px] text-paper/90 has-[:checked]:border-terracotta-soft has-[:checked]:bg-terracotta-soft has-[:checked]:text-ink transition-colors"
+                      ><input
+                        type="radio"
+                        name="horario"
+                        value="Tarde"
+                        class="sr-only"
+                      />Tarde</label
+                    >
+                    <label
+                      class="cursor-pointer rounded-full border border-paper/30 px-4 py-2 text-[13px] text-paper/90 has-[:checked]:border-terracotta-soft has-[:checked]:bg-terracotta-soft has-[:checked]:text-ink transition-colors"
+                      ><input
+                        type="radio"
+                        name="horario"
+                        value="Fim de tarde"
+                        class="sr-only"
+                      />Fim de tarde</label
+                    >
+                    <label
+                      class="cursor-pointer rounded-full border border-paper/30 px-4 py-2 text-[13px] text-paper/90 has-[:checked]:border-terracotta-soft has-[:checked]:bg-terracotta-soft has-[:checked]:text-ink transition-colors"
+                      ><input
+                        type="radio"
+                        name="horario"
+                        value="Sábado"
+                        class="sr-only"
+                      />Sábado</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="obs"
+                    class="mb-2 block text-[12px] uppercase tracking-[0.2em] text-paper/60"
+                    >Alguma coisa que a gente devia saber?</label
+                  >
+                  <textarea
+                    id="obs"
+                    rows="4"
+                    placeholder="Ex: tenho medo de anestesia; é minha primeira vez em anos; meu filho tem 5 anos..."
+                    class="w-full border-b border-paper/25 bg-transparent py-2 text-[15px] text-paper outline-none placeholder:text-paper/40 focus:border-terracotta-soft"
+                  ></textarea>
+                </div>
+                <button
+                  id="submitBtn"
+                  type="submit"
+                  class="rounded-full bg-terracotta px-6 py-3 text-[14px] text-paper hover:-translate-y-0.5 disabled:opacity-70 transition-transform"
+                >
+                  Quero agendar
+                </button>
+                <p class="text-[12px] text-paper/50">
+                  Ao enviar, você concorda que a gente entre em contato só sobre
+                  a consulta. Sem newsletter, sem lista de transmissão.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="border-t border-border bg-paper">
+      <div class="mx-auto max-w-6xl px-5 py-10 md:px-8">
+        <svg
+          class="mb-8 h-3 w-40 text-terracotta/60"
+          viewBox="0 0 400 20"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M4 12 C 60 4, 120 18, 180 10 S 320 4, 396 12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+        <div
+          class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+        >
+          <div>
+            <p class="font-serif text-[20px] text-ink">
+              Tatiana <em class="not-italic text-terracotta">Bresser</em>
+            </p>
+            <p class="mt-2 max-w-sm text-[13px] text-ink-soft">
+              Clínica odontológica · Vila Maria, São Paulo
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 text-[13px] text-ink-soft md:items-end"
+          >
+            <div class="flex gap-4">
+              <a href="#" aria-label="Instagram" class="hover:text-ink"
+                >Instagram</a
+              >
+              <a href="#" aria-label="Facebook" class="hover:text-ink"
+                >Facebook</a
+              >
+              <a href="https://wa.me/5511999998888" class="hover:text-ink"
+                >WhatsApp</a
+              >
+            </div>
+            <p>CNPJ 12.345.678/0001-90</p>
+            <p>Responsável técnica: Dra. Helena Ribeiro — CRO/SP 43.211</p>
+          </div>
+        </div>
+        <p
+          id="copyYear"
+          class="mt-8 text-[11px] uppercase tracking-[0.2em] text-ink-soft/70"
+        >
+          © — feito com café na sala de espera
+        </p>
+      </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLOAT ========== -->
+    <a
+      target="_blank"
+      href="https://wa.me/5511974043073"
+      aria-label="Conversar no WhatsApp"
+      class="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-sage-deep px-4 py-3 text-paper shadow-lg hover:-translate-y-0.5 transition-transform md:bottom-8 md:right-8"
+    >
+      <svg
+        viewBox="0 0 32 32"
+        class="h-5 w-5"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.7 6.3L4 29l7.9-2.1c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.2 1.3-4.6-.2-.4c-1-1.7-1.6-3.6-1.6-5.5C5.1 9.4 9.9 4.6 16 4.6c3 0 5.7 1.1 7.8 3.2 2.1 2.1 3.2 4.8 3.2 7.8 0 6.1-4.9 10.9-11 10.9zm6.1-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.9 1-1 1.2-.2.2-.4.2-.7 0-.3-.2-1.4-.5-2.6-1.6-1-.9-1.7-2-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7 0 1.6 1.2 3.2 1.3 3.4.2.2 2.4 3.6 5.8 5 3.4 1.4 3.4.9 4.1.9.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.5z"
+        />
+      </svg>
+      <span class="hidden text-[14px] font-medium sm:inline"
+        >Conversar no WhatsApp</span
+      >
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
